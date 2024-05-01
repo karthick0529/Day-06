@@ -1,0 +1,25 @@
+class Movie {
+    constructor(title, studio, rating) {
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+
+    // Static method to filter and return movies with 'PG' rating
+    static getPG(movieArray) {
+        return movieArray.filter(movie => movie.rating === "PG");
+    }
+}
+
+// Creating an instance of the Movie class with the title "Casino Royale", the studio "Eon Productions", and the rating "PG13"
+const casinoRoyale = new Movie("Casino Royale", "Eon Productions", "PG13");
+
+// Example usage of getPG method
+const movies = [
+    new Movie("Movie A", "Studio A", "PG"),
+    new Movie("Movie B", "Studio B", "R"),
+    casinoRoyale
+];
+
+const pgMovies = Movie.getPG(movies);
+console.log(pgMovies); // This will log only the movies with 'PG' rating
