@@ -1,0 +1,36 @@
+class person{
+constructor(name, age, gender, state, country){
+this.name=name;
+this.age=age;
+this.gender=gender;
+this.state=state;
+this.country=country;
+}
+
+getname(){
+return `The name of the person ${this.name}`
+}
+
+getage(){
+return `The age for the person ${this.age}`
+}
+
+getcountry(){
+return `The country for the person ${this.country}`
+}
+
+setage(ag){
+this.age=ag
+return this.age
+}
+}
+var c1= new person("Ram", 10, "male", "TamilNadu", "India");
+console.log(c1.name);
+console.log(c1.age);
+console.log(c1.gender);
+console.log(c1.state);
+console.log(c1.country);
+console.log(c1.getage());
+console.log(c1.getcountry());
+console.log(c1.getname());
+console.log(c1.setage(11));
