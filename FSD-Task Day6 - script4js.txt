@@ -1,0 +1,12 @@
+class uber{
+constructor(km){
+this.km=km;
+}
+
+getdistance(){
+return this.km*22;
+}
+
+}
+var c1= new uber(10);
+console.log(c1.getdistance());
